@@ -10,7 +10,7 @@ const path = require('path');
   },
    plugins: [
      new HtmlWebpackPlugin({
-      title: 'Repository Template',
+      title: 'Dynamic User Interface',
        template: './src/index.html',
      }),
    ],
@@ -22,8 +22,8 @@ const path = require('path');
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
+        type: 'asset'
       },
     ],
   },
